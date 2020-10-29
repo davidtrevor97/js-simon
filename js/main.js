@@ -33,7 +33,18 @@ function richiestaF(){
 }
 
 // Una volta inseriti i 5 numeri, il software dice quanti e quali numeri sono stati ricordati.
-
+setTimeout ( punteggio , 30000 )
+function punteggio(randomArray, insertNumber) {
+    var rightAnswer = [];
+    for ( var i = 0; i < randomArray.length; i++ ) {
+        for ( var e = 0; e < insertNumber.length; e++ ) {
+            if ( randomArray[i] === insertNumber[e] ) {
+            rightAnswer.push( insertNumber[e] );}
+        }
+    }
+    $(".punteggio").text(rightAnswer);
+    return rightAnswer;
+}
 
 console.log(randomArray);
 console.log(insertNumber);
