@@ -26,18 +26,14 @@ var insertNumber = [];
 setTimeout( richiestaF , 10500);
 function richiestaF(){
   for (var i = 0; i < 5 ; i++) {
-    var richiesta = parseInt( prompt("inerisci i numeri che hai appena visto") );
+    var richiesta = parseInt( prompt("Inserisci i numeri che hai appena visto") );
     insertNumber.push(richiesta);
     }
 
 }
 
-//array numeri giusti
-setTimeout( punteggio , 30000)
-function punteggio(){
-  $(".punteggio").text(intersection);
-  return intersection;
-}
+// Una volta inseriti i 5 numeri, il software dice quanti e quali numeri sono stati ricordati.
+
 
 console.log(randomArray);
 console.log(insertNumber);
