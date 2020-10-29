@@ -35,17 +35,8 @@ function richiestaF(){
 //array numeri giusti
 setTimeout( punteggio , 30000)
 function punteggio(){
-  var rightAnswer = [];
-  var a = 0;
-  for (var i = 0; i < randomArray.length; i++) {
-    if ( insertNumber[a] == randomArray[i]) {
-      rightAnswer.push( insertNumber[a] );
-      a += 1;
-    } else {
-      a += 1;
-      }
-    }
-  $(".punteggio").text("COMPLIMENTI HAI INDOVINATO  " + rightAnswer.length + "  PAROLE SU 5")
+  $(".punteggio").text(intersection);
+  return intersection;
 }
 
 console.log(randomArray);
